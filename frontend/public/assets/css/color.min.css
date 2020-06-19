@@ -1,0 +1,497 @@
+.dx_top_social_icon ul li:hover a, .dx_callus i, .dx_phone_num h6, .dx_main_navigation ul li::before, .dx_main_navigation ul li.active > a, .dx_main_navigation ul li:hover > a {
+    color: #FFF
+}
+
+.dx_property_services_wrap:hover i, .dx_property_services_wrap:hover h5 > a, /*Property Listing Wrap Css*/
+.dx_property_listing_wrap:hover .dx_property_listing_des h5 > a, .dx_property_listing_wrap:hover .dx_listing_total_price h4, /*Pagination Wrap Css*/
+.dx_property_pagination ul li a:hover, .dx_property_pagination ul li.active a, /*Most Recent Property Wrap Css*/
+    /*Leased And Sold Property Wrap Css*/
+    /*Property For Rent Wrap Css*/
+.dx_rent_property_des h6 > a:hover, .dx_rent_property_des ul li:hover i, /*Our Agent Wrap*/
+    /*Number Counter Wrap Css*/
+    /*Latest Blog Wrap Css*/
+    /*Map Wrap Css*/
+    /*Company Wrap Css*/
+    /*Twitter Wrap Css*/
+    /*Home Page Footer Widgets*/
+    /*Home Page Footer*/
+    /*Index Page 2 CSS*/
+    /*Advance Search Css*/
+    /*Sub Banner Wrap Css*/
+    /*Know More About Property Wrap Css*/
+    /*Heading Wrap Css*/
+    /*Testmonial Wrap Start Wrap Css*/
+    /*Core Value Wrap Start Wrap Css*/
+    /*Blog Listing Wrap Css*/
+ul.dx_blog_listing_meta li:hover a, .dx_blog_listing_des > a:hover, /*Aside Bar Widgets Css*/
+.dx_aside_category ul li:hover:before, .dx_aside_category ul li:hover a, .dx_aside_category ul li:hover span, /*Featured Post Css*/
+.dx_aside_post_des h6 > a:hover, /*Featured Agent CSS*/
+.dx_aside_agent_des h6 > a:hover, .dx_aside_agent_des span i, /*Featured Properties CSS*/
+    /*Search For Property Wrap CSS*/
+    /*Blog Listing 2 Wrap Css*/
+ul.dx_blog_social_icon li:hover a, .dx_listing2_blog h4 > a:hover, /*Blog Detail Wrap Css*/
+ul.dx_tag_list li:hover a, .dx_property_detail_real ul li:hover i, .dx_property_detail_real ul li:hover a, /*Comment CSS*/
+.dx_comment_des > a, .dx_comment_des h6 > a:hover, /*Post Comment CSS*/
+    /*Blog Detail 2 Wrap Css*/
+.dx_property_detail_Essentail ul li:hover a, /*Comming Soon Page Css*/
+    /*Team Detail Page Css*/
+    /*Reviews of the Client Wrap Css*/
+.dx_pet_testi_3_fig_des h5 > a:hover, /*Property Meta Wrap Css*/
+    /*property Listing 02 Wrap CSS*/
+.dx_property_caption h5 > a:hover, .dx_property_dolar li:hover a, ul.dx_listing_03_location li:hover a, /*property Listing 04 Wrap CSS*/
+    /*Contact Us 03 Wrap Css*/
+    /*Property Detail Page Css*/
+    /*404 Page Page Css*/
+.dx_error_text h3, /*Submit Property Page Css*/
+    /*ShortCode CSS*/
+.pet_love_content_list h6 > a:hover, .goal_des ul > li::before, ul.dx_product_featured_list li:hover a, /* Envoto Listing Css */
+ul.envoto_ui_element li:hover a, ul.envoto_tweet_element li:hover a
+    /*Login Page Css*/
+    /*Header 3 Css Wrap*/
+    /* Gallery Wrap Start */
+{
+    color: #015ea7
+}
+
+.dx_list_free:hover, .dx_main_navigation ul ul li:hover > a, /*Navigation 2 CSS*/
+.dl-menuwrapper ul, .dx_logo_nav_style2 .dx_main_navigation > ul > li.active > a, .dx_logo_nav_style2 .dx_main_navigation > ul > li:hover > a, /*Banner Wrap Css*/
+.dx_banner_wrap .bx-wrapper .bx-controls-direction a:hover, /* DL Menu Wrap CSS */
+.dl-menuwrapper button, /*Our Services Wrap Css*/
+.dx_property_services_wrap:hover h5 > a:before, /*Property Listing Wrap Css*/
+.dx_listing_overlay, /*Pagination Wrap Css*/
+    /* Video Wrap Css */
+.dx_play_btn > a:hover, .dx_video_wrap > a:hover, .dx_video_wrap > a:hover > i:after, /*Most Recent Property Wrap Css*/
+    /*Leased And Sold Property Wrap Css*/
+.dx_leased_property.dx_sold_property a.dx_link_1:hover, .dx_leased_property:after, /*Property For Rent Wrap Css*/
+.dx_rent_label, .kf_rent_property_des ul li:hover span, .dx_property_rent_wrap:hover .dx_rent_location, .kf_rent_property.owl-theme .owl-controls .owl-page.active span, .kf_rent_property.owl-theme .owl-controls .owl-page:hover span, /*Our Agent Wrap*/
+.dx_agent_slider.owl-theme .owl-controls .owl-buttons div:hover, /*Number Counter Wrap Css*/
+.dx_num_counter_bg:before, /*Latest Blog Wrap Css*/
+    /*Map Wrap Css*/
+    /*Company Wrap Css*/
+    /*Twitter Wrap Css*/
+.dx_twitter_wrap_bg, /*Home Page Footer Widgets*/
+.widget > h6:before, /*Home Page Footer*/
+    /*Index Page 2 CSS*/
+.dx_schedule_wrap, .dx_schedule_visit > a:hover, /*Advance Search Css*/
+.dx_search_field input[type="submit"], .dx_search_field button, /*Sub Banner Wrap Css*/
+    /*Know More About Property Wrap Css*/
+.dx_know_property_bg, /*Heading Wrap Css*/
+.dx_heading_2 h3:before, /*Testmonial Wrap Start Wrap Css*/
+    /*Core Value Wrap Start Wrap Css*/
+    /* About Us Wrap Css */
+.dx_video_icon a:hover, /*Blog Listing Wrap Css*/
+.dx_blog_listing_wrap .bx-wrapper .bx-controls-direction a, /*Aside Bar Widgets Css*/
+    /*Search For Property Wrap CSS*/
+.dx_search_property_wrap h6, .kf_property_field .dx_range_slider .ui-slider .ui-slider-range, .aside_hdg h5:after, .kf_property_field input[type="submit"], .kf_property_field button, /*Featured Post Css*/
+    /*Featured Agent CSS*/
+    /*Featured Properties CSS*/
+    /*Blog Listing 2 Wrap Css*/
+.dx_listing2_blog_wrap:hover .dx_listing2_blog_des > a, /*Blog Detail Wrap Css*/
+.dx_property_detail_social_icon ul li a, /*Post Comment CSS*/
+.dx_commet_field input[type="submit"], .dx_commet_field button, /*Blog Detail 2 Wrap Css*/
+    /*Comming Soon Page Css*/
+.dx_cooming_soon_form button:hover, /*Team Detail Page Css*/
+.member_contact_des i, .dx_member_contact_detail ul li:hover, /*Reviews of the Client Wrap Css*/
+.dx_client_review_slider.owl-theme .owl-controls .owl-page.active span, .dx_client_review_slider.owl-theme .owl-controls .owl-page:hover span, /*Property Meta Wrap Css*/
+    /*property Listing 02 Wrap CSS*/
+    /*property Listing 03 Wrap CSS*/
+.dx_listing_03_wrap:hover .dx_listing_total, /*property Listing 04 Wrap CSS*/
+.dx_listing_03_des > a:hover, /*Contact Us 03 Wrap Css*/
+.dx_content_us_icon:before, .dx_content_us_icon span:before, .dx_loging_input button, .dx_loging_input input[type="submit"], /*Property Detail Page Css*/
+.dx_property_detail_bed ul li:hover, .dx_property_detail_sale > a, .dx_property_detail_form button, .dx_property_detail_form input[type="submit"], /*404 Page Page Css*/
+.dx_go_back_bg, /*Submit Property Page Css*/
+.dx_submit_property_button button, /*ShortCode CSS*/
+.accordion.accordion-open, ul.dx_shortcode_social2 li:hover a, .dx_link_1:hover, .dx_btn_1:hover, .dx-action7_content:hover a::before, .pet_love_content ul li:hover span::before, .dx_price_table:hover .dx_table_price, .dx_price_table:hover .dx_table_price::before, /*Login Page Css*/
+.dx_login_1, /*Header 3 Css Wrap*/
+.top_navi_circal:hover a, .dx_hdr2_search > a:hover, .dx_hdr2_navigation, .dx_footer_content, .dx_footer_bg, /* Gallery Wrap Start */
+#filterable-item-filter-1 a {
+    background-color: #015ea7
+}
+
+.dx_main_navigation ul ul, /*Banner Wrap Css*/
+    /*Our Services Wrap Css*/
+    /*Property Listing Wrap Css*/
+.dx_listing_detail > a.dx_link_1:hover, /*Pagination Wrap Css*/
+.dx_property_listing_wrap:hover, /* Video Wrap Css */
+.dx_play_btn > a:hover, .dx_video_wrap > a:hover, /*Most Recent Property Wrap Css*/
+    /*Leased And Sold Property Wrap Css*/
+    /*Property For Rent Wrap Css*/
+    /*Our Agent Wrap*/
+    /*Number Counter Wrap Css*/
+    /*Latest Blog Wrap Css*/
+    /*Map Wrap Css*/
+    /*Company Wrap Css*/
+.dx_compnay_wrap:hover, /*Twitter Wrap Css*/
+    /*Home Page Footer Widgets*/
+    /*Home Page Footer*/
+    /*Index Page 2 CSS*/
+    /*Advance Search Css*/
+    /*Sub Banner Wrap Css*/
+    /*Know More About Property Wrap Css*/
+    /*Heading Wrap Css*/
+    /*Testmonial Wrap Start Wrap Css*/
+    /*Core Value Wrap Start Wrap Css*/
+    /*Blog Listing Wrap Css*/
+.dx_blog_listing_pager a.active, .dx_blog_listing_pager a:hover, /*Aside Bar Widgets Css*/
+    /*Search For Property Wrap CSS*/
+.kf_property_field .dx_range_slider .ui-slider .ui-slider-handle, /*Featured Post Css*/
+    /*Featured Agent CSS*/
+    /*Featured Properties CSS*/
+    /*Blog Listing 2 Wrap Css*/
+.dx_listing2_blog_wrap:hover .dx_listing2_blog_des > a, /*Blog Detail Wrap Css*/
+    /*Blog Detail 2 Wrap Css*/
+    /*Comming Soon Page Css*/
+    /*Team Detail Page Css*/
+    /*Reviews of the Client Wrap Css*/
+.dx_client_review_slider .item:hover .dx_pet_testi_3, .dx_client_review_slider .item:hover .dx_pet_testi_3_fig figure img, /*Property Meta Wrap Css*/
+    /*property Listing 02 Wrap CSS*/
+    /*property Listing 04 Wrap CSS*/
+.dx_listing_03_des > a:hover, /*Contact Us 03 Wrap Css*/
+.dx_content_us_icon span:after, /*Property Detail Page Css*/
+    /*404 Page Page Css*/
+    /*Submit Property Page Css*/
+    /*ShortCode CSS*/
+ul.dx_shortcode_social2 li:hover a, .dx_link_1:hover, .dx_prdct_featured_wrap a.dx_link_1:hover, .dx_price_table:hover, /*Login Page Css*/
+    /*Header 3 Css Wrap*/
+.dx_hdr2_search input[type="text"]:focus
+    /* Gallery Wrap Start */
+{
+    border-color: #015ea7
+}
+
+.dx_top_social_icon ul li a, .dx_list_free a, .dx_list_free, .dx_list_free a,
+
+/
+.dx_main_navigation ul li, *
+
+/
+/
+.dx_main_navigation ul li:before, *
+
+/
+/
+.dx_main_navigation ul li a, *
+
+/
+/
+.dx_main_navigation ul ul, *
+
+/
+/
+.dx_main_navigation ul ul ul, *
+
+/
+.dx_mega_detail i, /* DL Responsive CSS */
+.dl-menuwrapper button, /*Banner Wrap Css*/
+.dx_banner_wrap .bx-wrapper .bx-controls-direction a, /*Our Services Wrap Css*/
+.dx_property_services_wrap, .dx_property_services_wrap i, .dx_property_services_wrap h5 > a, .dx_property_services_wrap > a, /*Property Listing Wrap Css*/
+.dx_property_listing_wrap, .dx_listing_detail, .dx_listing_overlay, .dx_listing_detail > a, .dx_property_listing_des, .dx_property_listing_des h5 > a, .dx_listing_total_price, .dx_listing_total_price h4, /*Pagination Wrap Css*/
+.dx_property_pagination ul li a, /* Video Wrap Css */
+.dx_video_wrap a:hover, .dx_video_wrap a i:after, /*Most Recent Property Wrap Css*/
+.dx_recent_property_wrap, .dx_like_property, .dx_recent_visible_des, .dx_like_property a, .dx_recent_property_des, ul.dx_recent_rating li a, .dx_recent_property_meta, /*Leased And Sold Property Wrap Css*/
+    /*Property For Rent Wrap Css*/
+.dx_property_rent_wrap, .dx_rent_label, .dx_rent_property_des h6 > a, .dx_rent_property_des ul li, .dx_rent_property_des ul li span, .dx_rent_location, .dx_rent_location h6, .dx_rent_total_price, .kf_rent_property.owl-theme .owl-controls .owl-page span, /*Our Agent Wrap*/
+.dx_agent_wrap figure img, .dx_agent_des h6 > a, .dx_agent_slider.owl-theme .owl-controls .owl-buttons div, /*Number Counter Wrap Css*/
+    /*Latest Blog Wrap Css*/
+.dx_blog_post_wrap, .dx_blog_post_wrap h6, .dx_blog_post_wrap h6 a, .dx_blog_des, .dx_blog_post_wrap figure img, ul.dx_blog_post_meta li, ul.dx_blog_post_meta li i, ul.dx_blog_post_meta li a, .dx_blog_des a, .dx_blog_slider.owl-theme .owl-controls .owl-buttons div, /*Map Wrap Css*/
+    /*Company Wrap Css*/
+.dx_compnay_wrap, /*Twitter Wrap Css*/
+.dx_compnay_wrap a, .dx_compnay_wrap a img, /*Home Page Footer Widgets*/
+    /*Home Page Footer*/
+    /*Col 1*/
+ul.dx_foo_address li i, ul.dx_foo_address li a, ul.dx_foo_social_icon li a, /*Col 2*/
+.dx_foo_listing_des > h6 > a, /*Col 3*/
+.dx_foo_latest_post, .dx_foo_latest_post figure img, .dx_foo_post_des p > a, /*Col 4*/
+.dx_foo_property_type ul li, .dx_foo_property_type ul li a, .dx_foo_property_type ul li a span, /*Copy Right CSS*/
+.dx_copyright_element ul li a, /*Index Page 2 CSS*/
+.dx_schedule_visit > a, /*Advance Search Css*/
+.dx_search_tab_wrap ul li a, .dx_news_tab_wrap ul li a, .dx_search_field input[type="submit"], .dx_search_field button, /*Sub Banner Wrap Css*/
+    /*Know More About Property Wrap Css*/
+    /* About Us Wrap Css */
+.dx_video_icon a, .dx_video_icon a, /*Heading Wrap Css*/
+    /*Testmonial Wrap Start Wrap Css*/
+    /*Core Value Wrap Start Wrap Css*/
+.dx_core_value_wrap ul li, .dx_core_value_wrap ul li a, .dx_testimonial_wrap .bx-wrapper .bx-controls-direction a, /*Blog Listing Wrap Css*/
+ul.dx_blog_listing_meta li, ul.dx_blog_listing_meta li a, .dx_blog_listing_des > a, .dx_blog_listing_wrap .bx-wrapper .bx-controls-direction a, .dx_blog_listing_pager a, /*Aside Bar Widgets Css*/
+    /*Search For Property Wrap CSS*/
+.dx_aside_category ul li, .dx_aside_category ul li:before, .dx_aside_category ul li a, .dx_aside_category ul li span, .kf_property_field input[type="submit"], .kf_property_field button, /*Featured Post Css*/
+.dx_aside_post_des h6 > a, .dx_aside_post_wrap ul li figure img, /*Featured Agent CSS*/
+.dx_aside_agent_des h6 > a, .dx_aside_fea_agent ul li figure img, /*Featured Properties CSS*/
+.dx_aside_fea_properties ul li a img, /*Blog Listing 2 Wrap Css*/
+.dx_listing2_blog_des > a, ul.dx_blog_social_icon li a, .dx_blog2_date, .dx_blog2_date span, .dx_blog2_date:before, .dx_listing2_blog h4 > a, .dx_listing2_blog_des .bx-wrapper .bx-controls-direction a, /*Blog Detail Wrap Css*/
+ul.dx_tag_list li a, .dx_property_detail_Essentail ul li a, .dx_floor_detail h5 > a, .dx_property_detail_real ul li, .dx_property_detail_real ul li i, .dx_property_detail_real ul li a, .dx_property_detail_social_icon ul li a, /*Comment CSS*/
+.dx_comment_des h6 > a, .dx_comment_des > a, /*Post Comment CSS*/
+.dx_commet_field input[type="submit"], .dx_commet_field button, /*Blog Detail 2 Wrap Css*/
+    /*Comming Soon Page Css*/
+.dx_cooming_soon_form button, /*Team Detail Page Css*/
+.dx_member_contact_detail ul li:hover, .member_contact_des i, .member_contact_des h5 > a, .member_contact_des a, .member_contact_des h5, ul.dx_recent_rating li a, /*Reviews of the Client Wrap Css*/
+.dx_pet_testi_3, .dx_pet_testi_3_fig figure img, .dx_pet_testi_3_fig_des h5 > a, .dx_pet_testi_3::before, /*Property Meta Wrap Css*/
+.dx_property_view i, /*property Listing 02 Wrap CSS*/
+.dx_property_caption h5 > a, .dx_property_dolar li a, .dx_property_more, .dx_property_img figure img, /*property Listing 03 Wrap CSS*/
+.dx_listing_total, .dx_listing_img_des a, ul.dx_listing_03_location li a, .dx_listing_03_des > a, /*property Listing 04 Wrap CSS*/
+.dx_listing_img_des h3, .dx_listing_03_des > a:hover, /*Contact Us 03 Wrap Css*/
+.dx_content_us_icon:before, .dx_content_us_icon span, .dx_content_us_icon span:before, .dx_content_us_icon span:after, .dx_with_us_form button, .dx_with_us_social ul li a, .dx_with_us_form input[type="text"], .dx_with_us_form input[type="email"], .dx_loging_input input[type="text"], .dx_loging_input label, .dx_loging_input button, .dx_loging_input input[type="submit"], .dx_login_password ul li a, /*Property Detail Page Css*/
+.dx_property_detail_bed ul li, .dx_property_detail_bed ul li a, .dx_property_detail_form button, .dx_property_detail_form input[type="submit"], .dx_property_detail_form input[type="text"], .dx_property_detail_form textarea, /*404 Page Page Css*/
+    /*Submit Property Page Css*/
+.dx_submit_property_button button, /*ShortCode CSS*/
+.pet_love_content_list h6 > a, ul.dx_shortcode_social2 li a, .dx_link_1, .dx_link_2, .dx_btn_1, .dx-action7_content a::before, .pet_love_content ul li span::before, .dx-action7_content a, .dx_table_price, .dx_price_table, .dx_table_price::before, .dx_price_table, ul.dx_product_featured_list li a, .dx_link_2, .dx-action7_content a, .pet_love_content span, /* Envoto Wrap Css */
+ul.envoto_ui_element li a, ul.envoto_tweet_element li a, /*Login Page Css*/
+.dx_login_social_icon ul li, /*Header 3 Css Wrap*/
+.top_navi_circal a, .dx_hdr2_search > a, .dx_hdr2_search input[type="text"], .dx_menu_scl_icon ul li a, .dx_hdr2_social_icon ul li a, .dx_top_weather a, /* Gallery Wrap Start */
+#filterable-item-filter-1 a, .edu_masonery_thumb figure, .edu_masonery_thumb figure::before, .edu_masonery_thumb figure > a, .edu_masonery_thumb figure figcaption, .edu_masonery_thumb:hover figure figcaption, .edu_masonery_thumb figure figcaption a {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out
+}
+
+.dx_property_listing_wrap:hover .dx_listing_overlay, .dx_property_listing_wrap:hover .dx_listing_detail > a, /*Pagination Wrap Css*/
+    /*Most Recent Property Wrap Css*/
+    /*Leased And Sold Property Wrap Css*/
+    /*Property For Rent Wrap Css*/
+.dx_property_rent_wrap:hover .dx_listing_overlay, .dx_property_rent_wrap:hover .dx_listing_detail > a, /*Our Agent Wrap*/
+    /*Number Counter Wrap Css*/
+    /*Latest Blog Wrap Css*/
+    /*Map Wrap Css*/
+    /*Company Wrap Css*/
+    /*Twitter Wrap Css*/
+    /*Home Page Footer Widgets*/
+    /*Home Page Footer*/
+    /*Index Page 2 CSS*/
+    /*Advance Search Css*/
+    /*Sub Banner Wrap Css*/
+    /*Know More About Property Wrap Css*/
+    /*Heading Wrap Css*/
+    /*Testmonial Wrap Start Wrap Css*/
+    /*Core Value Wrap Start Wrap Css*/
+    /*Blog Listing Wrap Css*/
+    /*Aside Bar Widgets Css*/
+    /*Search For Property Wrap CSS*/
+    /*Featured Post Css*/
+    /*Featured Agent CSS*/
+    /*Featured Properties CSS*/
+    /*Blog Listing 2 Wrap Css*/
+    /*Blog Detail Wrap Css*/
+.dx_property_detail_map ul li:hover .dx_listing_overlay, /*Blog Detail 2 Wrap Css*/
+    /*Comming Soon Page Css*/
+    /*Team Detail Page Css*/
+.dx_agent_wrap:hover .dx_listing_overlay, /*Reviews of the Client Wrap Css*/
+    /*Property Meta Wrap Css*/
+    /*property Listing 02 Wrap CSS*/
+    /*property Listing 03 Wrap CSS*/
+.dx_listing_03_wrap:hover .dx_listing_overlay, /*property Listing 04 Wrap CSS*/
+    /*Contact Us 03 Wrap Css*/
+.dx_content_us_icon:hover span:before, .dx_content_us_icon:hover span:after, /*Property Detail Page Css*/
+    /*404 Page Page Css*/
+    /*Submit Property Page Css*/
+    /*ShortCode CSS*/
+.dx-action7_content:hover a::before, .pet_love_content ul li:hover span::before
+    /*Login Page Css*/
+    /*Header 3 Css Wrap*/
+    /* Gallery Wrap Start */
+{
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1)
+}
+
+.dx_agent_wrap:hover figure img, /*Latest Blog Wrap Css*/
+.dx_blog_post_wrap:hover figure img, /*Footer Wrap CSS*/
+.dx_foo_latest_post:hover figure img, /*Featured Post Css*/
+.dx_aside_post_wrap ul li:hover figure img
+    /*Featured Agent CSS*/
+.dx_aside_fea_agent ul li:hover figure img, /*Featured Properties CSS*/
+.dx_aside_fea_properties ul li:hover a img, /*Blog Listing 2 Wrap Css*/
+    /*Blog Detail Wrap Css*/
+    /*Blog Detail 2 Wrap Css*/
+    /*Comming Soon Page Css*/
+    /*Team Detail Page Css*/
+    /*Reviews of the Client Wrap Css*/
+    /*Property Meta Wrap Css*/
+    /*property Listing 02 Wrap CSS*/
+.dx_listing_outer_wrap:hover .dx_property_img figure img
+    /*property Listing 04 Wrap CSS*/
+    /*Contact Us 03 Wrap Css*/
+    /*Property Detail Page Css*/
+    /*404 Page Page Css*/
+    /*Submit Property Page Css*/
+    /*ShortCode CSS*/
+    /*Login Page Css*/
+    /*Header 3 Css Wrap*/
+    /* Gallery Wrap Start */
+{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2)
+}
+
+.dx_like_property > a:hover, /*Leased And Sold Property Wrap Css*/
+    /*Property For Rent Wrap Css*/
+    /*Our Agent Wrap*/
+.dx_agent_des h6 > a:hover, /*Number Counter Wrap Css*/
+    /*Latest Blog Wrap Css*/
+.dx_blog_post_wrap:hover > h6, .dx_blog_des > h6 > a:hover, .dx_blog_post_wrap:hover .dx_blog_des > a, ul.dx_blog_post_meta li:hover i, ul.dx_blog_post_meta li:hover a, /*Map Wrap Css*/
+    /*Company Wrap Css*/
+    /*Twitter Wrap Css*/
+    /*Home Page Footer Widgets*/
+    /*Home Page Footer*/
+    /*Col 1*/
+ul.dx_foo_address li:hover i, ul.dx_foo_address li:hover a, /*Col 2*/
+.dx_foo_listing_des > h6 > a:hover, /*Col 3*/
+.dx_foo_post_des p > a:hover, /*Col 4*/
+.dx_foo_property_type ul li:hover a, /*Copy Right Css*/
+.dx_copyright_element ul li:hover a, /*Index Page 2 CSS*/
+    /*Advance Search Css*/
+.dx_search_field .amount, /*Sub Banner Wrap Css*/
+    /*Know More About Property Wrap Css*/
+    /*Heading Wrap Css*/
+    /*Testmonial Wrap Start Wrap Css*/
+    /*Core Value Wrap Start Wrap Css*/
+.dx_core_value_wrap ul li.active a, .dx_core_value_wrap ul li:hover a, /*Blog Listing Wrap Css*/
+    /*Aside Bar Widgets Css*/
+    /*Search For Property Wrap CSS*/
+    /*Featured Post Css*/
+    /*Featured Agent CSS*/
+    /*Featured Properties CSS*/
+    /*Blog Listing 2 Wrap Css*/
+    /*Blog Detail Wrap Css*/
+    /*Blog Detail 2 Wrap Css*/
+    /*Comming Soon Page Css*/
+.dx_comming_counter ul.countdown li span, /*Team Detail Page Css*/
+.dx_team_detail_des ul.dx_recent_rating li:hover a, /*Reviews of the Client Wrap Css*/
+    /*Property Meta Wrap Css*/
+    /*property Listing 02 Wrap CSS*/
+    /*property Listing 04 Wrap CSS*/
+.dx_listing_03_des ul.dx_recent_rating li:hover a, /*Contact Us 03 Wrap Css*/
+.dx_with_us_social ul li:hover a, .dx_login_password ul li:hover a, /*Property Detail Page Css*/
+    /*404 Page Page Css*/
+.dx_404_wrap h2, .dx_not_found_wrap h2, /*Submit Property Page Css*/
+.dx_submit_property_newsletter a, /*ShortCode CSS*/
+.dx_link_2:hover, /*Login Page Css*/
+    /*Header 3 Css Wrap*/
+.dx_hdr2_social_icon ul li:hover a, .dx_top_weather a:hover
+    /* Gallery Wrap Start */
+{
+    color: #f48020
+}
+
+.dx_top_bar, .no-touch .dl-menuwrapper li a:hover, /*Banner Wrap Css*/
+.dx_banner_wrap .bx-wrapper .bx-controls-direction a, /* DL Responsive CSS */
+.dl-menuwrapper button:hover, .dl-menuwrapper button.dl-active, .dx_hdr2_navigation .dl-trigger, /*Our Services Wrap Css*/
+    /*Property Listing Wrap Css*/
+    /*Pagination Wrap Css*/
+    /*Most Recent Property Wrap Css*/
+    /*Leased And Sold Property Wrap Css*/
+.dx_sold_property.dx_sold_property:after, .dx_leased_property a.dx_link_1:hover, /*Property For Rent Wrap Css*/
+    /*Our Agent Wrap*/
+    /*Number Counter Wrap Css*/
+    /*Latest Blog Wrap Css*/
+.dx_blog_slider.owl-theme .owl-controls .owl-buttons div:hover, /*Map Wrap Css*/
+    /*Company Wrap Css*/
+    /*Twitter Wrap Css*/
+    /*Home Page Footer Widgets*/
+.widget > h6:after, .dx_foo_listing_hover, /*Home Page Footer*/
+    /*Col 1*/
+ul.dx_foo_social_icon li:hover a, /*Index Page 2 CSS*/
+.dx_schedule_visit > a, /*Advance Search Css*/
+.dx_search_tab_wrap ul li.active a, .dx_news_tab_wrap ul li.active a, .dx_search_tab_wrap ul li:hover a, .dx_news_tab_wrap ul li:hover a, .dx_search_field input[type="submit"]:hover, .dx_search_field input[type="button"]:hover, .dx_search_field button:hover, .dx_range_slider .ui-widget-header, /*Sub Banner Wrap Css*/
+.dx_property_sub_banner, /*Know More About Property Wrap Css*/
+    /*Heading Wrap Css*/
+.dx_heading_2 h3:after, /*Testmonial Wrap Start Wrap Css*/
+    /*Core Value Wrap Start Wrap Css*/
+.dx_testimonial_wrap .bx-wrapper .bx-controls-direction a:hover, /*Blog Listing Wrap Css*/
+.dx_blog_listing_wrap .bx-wrapper .bx-controls-direction a:hover, /*Aside Bar Widgets Css*/
+    /*Search For Property Wrap CSS*/
+.aside_hdg h5:before, .kf_property_field input[type="submit"]:hover, .kf_property_field input[type="button"]:hover, .kf_property_field button:hover, /*Featured Post Css*/
+    /*Featured Agent CSS*/
+    /*Featured Properties CSS*/
+    /*Blog Listing 2 Wrap Css*/
+.dx_blog2_date:before, .dx_listing2_blog_des .bx-wrapper .bx-controls-direction a:hover, /*Blog Detail Wrap Css*/
+.dx_property_detail_social_icon ul li:hover a, /*Post Comment CSS*/
+.dx_commet_field input[type="submit"]:hover, .dx_commet_field input[type="button"]:hover, .dx_commet_field button:hover, /*Blog Detail 2 Wrap Css*/
+    /*Comming Soon Page Css*/
+.dx_cooming_soon_form button, /*Team Detail Page Css*/
+.dx_member_contact_detail ul li:hover .member_contact_des i, /*Reviews of the Client Wrap Css*/
+    /*Property Meta Wrap Css*/
+.dx_property_view i:hover, /*property Listing 02 Wrap CSS*/
+.dx_property_more:hover, /*property Listing 04 Wrap CSS*/
+    /*Contact Us 03 Wrap Css*/
+.dx_with_us_form button:hover, .dx_loging_input button:hover, .dx_loging_input input[type="submit"], .dx_loging_input input[type="text"]:focus + label, /*Property Detail Page Css*/
+.dx_property_detail_form button:hover, .dx_property_detail_form input[type="submit"]:hover, .dx_property_detail_form input[type="button"]:hover, /*404 Page Page Css*/
+    /*Submit Property Page Css*/
+.dx_submit_property_button button:hover, /*ShortCode CSS*/
+.dx_table_price, .dx_table_price::before, /*Login Page Css*/
+.dx_login_social_icon ul li:hover a, /*Header 3 Css Wrap*/
+.top_navi_circal a, .dx_hdr2_search > a, .dx_menu_scl_icon ul li a, .header2 .dx_main_navigation > ul > li.active > a, .header2 .dx_main_navigation > ul > li:hover > a, /*2nd Ul*/
+.header2 .dx_main_navigation ul ul li:hover > a, /* Gallery Wrap Start */
+#filterable-item-filter-1 a:hover, .edu_masonery_thumb:hover figure figcaption, #filterable-item-filter-1 > li .active {
+    background-color: #f48020
+}
+
+.dx_banner_wrap, /*Our Services Wrap Css*/
+    /*Property Listing Wrap Css*/
+    /*Pagination Wrap Css*/
+    /*Most Recent Property Wrap Css*/
+    /*Leased And Sold Property Wrap Css*/
+    /*Property For Rent Wrap Css*/
+    /*Our Agent Wrap*/
+    /*Number Counter Wrap Css*/
+    /*Latest Blog Wrap Css*/
+.dx_blog_post_wrap:hover .dx_blog_des > a, /*Map Wrap Css*/
+    /*Company Wrap Css*/
+    /*Twitter Wrap Css*/
+    /*Home Page Footer Widgets*/
+.dx_foo_featured_listing figure, /*Home Page Footer*/
+    /*Index Page 2 CSS*/
+    /*Advance Search Css*/
+.dx_range_slider .ui-slider .ui-slider-handle, /*Sub Banner Wrap Css*/
+    /*Know More About Property Wrap Css*/
+    /*Heading Wrap Css*/
+    /*Testmonial Wrap Start Wrap Css*/
+    /*Core Value Wrap Start Wrap Css*/
+    /*Blog Listing Wrap Css*/
+    /*Aside Bar Widgets Css*/
+    /*Search For Property Wrap CSS*/
+.kf_property_field input[type="submit"]:hover, .kf_property_field button:hover, /*Featured Post Css*/
+    /*Featured Agent CSS*/
+    /*Featured Properties CSS*/
+    /*Blog Listing 2 Wrap Css*/
+    /*Blog Detail Wrap Css*/
+    /*Blog Detail 2 Wrap Css*/
+    /*Comming Soon Page Css*/
+    /*Team Detail Page Css*/
+    /*Reviews of the Client Wrap Css*/
+    /*Property Meta Wrap Css*/
+    /*property Listing 02 Wrap CSS*/
+    /*property Listing 04 Wrap CSS*/
+.dx_property_more:hover, /*Contact Us 03 Wrap Css*/
+.dx_loging_input input[type="text"]:focus, /*Property Detail Page Css*/
+.dx_property_detail_form button:hover, .dx_property_detail_form input[type="submit"]:hover, .dx_property_detail_form input[type="text"]:focus, .dx_property_detail_form textarea:focus, /*404 Page Page Css*/
+    /*Submit Property Page Css*/
+    /*ShortCode CSS*/
+.dx_link_2:hover
+    /*Login Page Css*/
+    /*Header 3 Css Wrap*/
+    /* Gallery Wrap Start */
+{
+    border-color: #f48020
+}
+
+.dx_client_review_slider .item:hover .dx_pet_testi_3::before
+    /*property Listing 04 Wrap CSS*/
+{
+    border-color: #015ea7 transparent transparent
+}
+
+.dx_market_news_bg, .dx_project_vihomes_bg, .dx_project_imminent_sale_bg, .dx_opinion_bg {
+    background-color: #f0f0f0
+}
+
+.dx_market_news_list, .dx_hot_events_list, .dx_project_vihomes_list, .dx_project_hot_list, .dx_project_imminent_sale_list, .dx_market_news_top {
+    background-color: #fff
+}
