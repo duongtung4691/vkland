@@ -83,7 +83,7 @@ class Slk extends BaseReader
      *
      * @param string $pValue Input encoding, eg: 'ANSI'
      *
-     * @return $this
+     * @return Slk
      */
     public function setInputEncoding($pValue)
     {
@@ -106,6 +106,8 @@ class Slk extends BaseReader
      * Return worksheet info (Name, Last Column Letter, Last Column Index, Total Rows, Total Columns).
      *
      * @param string $pFilename
+     *
+     * @throws Exception
      *
      * @return array
      */
@@ -175,6 +177,8 @@ class Slk extends BaseReader
      *
      * @param string $pFilename
      *
+     * @throws Exception
+     *
      * @return Spreadsheet
      */
     public function load($pFilename)
@@ -190,6 +194,9 @@ class Slk extends BaseReader
      * Loads PhpSpreadsheet from file into PhpSpreadsheet instance.
      *
      * @param string $pFilename
+     * @param Spreadsheet $spreadsheet
+     *
+     * @throws Exception
      *
      * @return Spreadsheet
      */
@@ -478,7 +485,7 @@ class Slk extends BaseReader
      *
      * @param int $pValue Sheet index
      *
-     * @return $this
+     * @return Slk
      */
     public function setSheetIndex($pValue)
     {

@@ -39,13 +39,12 @@ This particular package intends to include the following benefits over the origi
 * Polish/język polski (pl_PL)
 * Russian/русский язык (ru_RU)
 * Brazilian Portuguese/português do Brasil (pt_BR)
-* European Portuguese/português europeu (pt_PT)
 * Sorani Kurdish/سۆرانی (ckb_IQ)
 * Arabic (United Arab Emirates)/لإمارات العربية المتحدة (ar_AE)
 
 ## Version
 
-v1.0.14
+v1.0.12
 
 ## Special Thanks
 
@@ -53,7 +52,6 @@ v1.0.14
 * [Lev Morozov](https://github.com/levmorozov): French and Russian languages.
 * [Igor Carvalho](https://github.com/Carvlho): Brazilian Portuguese language.
 * [Khoshbin Ali Ahmed](https://github.com/Xoshbin): Sorani Kurdish and Arabic languages.
-* [RhaPT](https://github.com/RhaPT): European Portuguese language.
 
 ## Installation
 
@@ -492,7 +490,7 @@ for a `.php` file in the `./lang/` directory.
 
 ## To run tests
 
-`./vendor/bin/phpunit tests`
+`./vendor/bin/phpunit tests/RakePlusTest.php`
 
 ## License
 

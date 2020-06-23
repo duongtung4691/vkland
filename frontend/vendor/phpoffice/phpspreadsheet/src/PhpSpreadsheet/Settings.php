@@ -28,6 +28,8 @@ class Settings
      * Allow/disallow libxml_disable_entity_loader() call when not thread safe.
      * Default behaviour is to do the check, but if you're running PHP versions
      *      7.2 < 7.2.1
+     *      7.1 < 7.1.13
+     *      7.0 < 7.0.27
      * then you may need to disable this check to prevent unwanted behaviour in other threads
      * SECURITY WARNING: Changing this flag is not recommended.
      *
@@ -59,8 +61,10 @@ class Settings
      *
      * @param string $rendererClass Class name of the chart renderer
      *    eg: PhpOffice\PhpSpreadsheet\Chart\Renderer\JpGraph
+     *
+     * @throws Exception
      */
-    public static function setChartRenderer($rendererClass): void
+    public static function setChartRenderer($rendererClass)
     {
         if (!is_a($rendererClass, IRenderer::class, true)) {
             throw new Exception('Chart renderer must implement ' . IRenderer::class);
@@ -85,7 +89,7 @@ class Settings
      *
      * @param int $options Default options for libxml loader
      */
-    public static function setLibXmlLoaderOptions($options): void
+    public static function setLibXmlLoaderOptions($options)
     {
         if ($options === null && defined('LIBXML_DTDLOAD')) {
             $options = LIBXML_DTDLOAD | LIBXML_DTDATTR;
@@ -115,12 +119,14 @@ class Settings
      * Allow/disallow libxml_disable_entity_loader() call when not thread safe.
      * Default behaviour is to do the check, but if you're running PHP versions
      *      7.2 < 7.2.1
+     *      7.1 < 7.1.13
+     *      7.0 < 7.0.27
      * then you may need to disable this check to prevent unwanted behaviour in other threads
      * SECURITY WARNING: Changing this flag to false is not recommended.
      *
      * @param bool $state
      */
-    public static function setLibXmlDisableEntityLoader($state): void
+    public static function setLibXmlDisableEntityLoader($state)
     {
         self::$libXmlDisableEntityLoader = (bool) $state;
     }
@@ -137,8 +143,10 @@ class Settings
 
     /**
      * Sets the implementation of cache that should be used for cell collection.
+     *
+     * @param CacheInterface $cache
      */
-    public static function setCache(CacheInterface $cache): void
+    public static function setCache(CacheInterface $cache)
     {
         self::$cache = $cache;
     }

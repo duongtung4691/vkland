@@ -46,6 +46,8 @@ class Gnumeric extends BaseReader
      *
      * @param string $pFilename
      *
+     * @throws Exception
+     *
      * @return bool
      */
     public function canRead($pFilename)
@@ -58,7 +60,7 @@ class Gnumeric extends BaseReader
         }
 
         // Read signature data (first 3 bytes)
-        $fh = fopen($pFilename, 'rb');
+        $fh = fopen($pFilename, 'r');
         $data = fread($fh, 2);
         fclose($fh);
 
@@ -167,6 +169,8 @@ class Gnumeric extends BaseReader
      *
      * @param string $pFilename
      *
+     * @throws Exception
+     *
      * @return Spreadsheet
      */
     public function load($pFilename)
@@ -182,6 +186,9 @@ class Gnumeric extends BaseReader
      * Loads from file into Spreadsheet instance.
      *
      * @param string $pFilename
+     * @param Spreadsheet $spreadsheet
+     *
+     * @throws Exception
      *
      * @return Spreadsheet
      */
@@ -472,7 +479,7 @@ class Gnumeric extends BaseReader
                     $endColumn = ($styleAttributes['endCol'] > $maxCol) ? $maxCol : (int) $styleAttributes['endCol'];
                     $endColumn = Coordinate::stringFromColumnIndex($endColumn + 1);
                     $endRow = ($styleAttributes['endRow'] > $maxRow) ? $maxRow : $styleAttributes['endRow'];
-                    ++$endRow;
+                    $endRow += 1;
                     $cellRange = $startColumn . $startRow . ':' . $endColumn . $endRow;
 
                     $styleAttributes = $styleRegion->Style->attributes();

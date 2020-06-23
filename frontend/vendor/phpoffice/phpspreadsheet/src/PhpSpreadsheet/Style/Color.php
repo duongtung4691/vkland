@@ -2,6 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheet\Style;
 
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
+
 class Color extends Supervisor
 {
     const NAMED_COLORS = [
@@ -102,7 +104,9 @@ class Color extends Supervisor
      *
      * @param array $pStyles Array containing style information
      *
-     * @return $this
+     * @throws PhpSpreadsheetException
+     *
+     * @return Color
      */
     public function applyFromArray(array $pStyles)
     {
@@ -139,7 +143,7 @@ class Color extends Supervisor
      *
      * @param string $pValue see self::COLOR_*
      *
-     * @return $this
+     * @return Color
      */
     public function setARGB($pValue)
     {
@@ -175,7 +179,7 @@ class Color extends Supervisor
      *
      * @param string $pValue RGB value
      *
-     * @return $this
+     * @return Color
      */
     public function setRGB($pValue)
     {
@@ -308,7 +312,7 @@ class Color extends Supervisor
      * @param bool $background Flag to indicate whether default background or foreground colour
      *                                            should be returned if the indexed colour doesn't exist
      *
-     * @return self
+     * @return Color
      */
     public static function indexedColor($pIndex, $background = false)
     {
