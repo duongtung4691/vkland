@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `N2CMS`
 --
-CREATE DATABASE IF NOT EXISTS `N2CMS` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-USE `N2CMS`;
+CREATE DATABASE IF NOT EXISTS `vietkaoland` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `vietkaoland`;
 
 -- --------------------------------------------------------
 
