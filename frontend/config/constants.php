@@ -7,26 +7,27 @@ use App\Core\Enums\ValidateEnum;
 
 return [
     'FRONTEND_URL' => env('FRONTEND_URL', ''),
+    'BACKEND_URL' => env('BACKEND_URL', ''),
     'FRONTEND_API' => 'https://103.216.112.45:8085',
-    'STATIC_IMAGES' => env('STATIC_IMAGES', 'https://192.168.100.27/upload'),
+    'STATIC_IMAGES' => env('STATIC_IMAGES', ''),
     'PATH_UPLOAD' => '/var/www/html/uploads',
     'FOLDER_UPLOAD' => '/uploads/index.php?folder=',
     'SSH2' => array(
-        'HOSTNAME' => '192.168.100.27',
-        'URL' => 'https://test-media.code.net.vn:8080',
+        'HOSTNAME' => '',
+        'URL' => '',
         'PORT' => 22,
-        'USERNAME' => 'nhatnhat',
-        'PASSWORD' => 'Nhatnhat@123'
+        'USERNAME' => '',
+        'PASSWORD' => ''
     ),
-    'REDIS_HOST' => env('REDIS_HOST', '192.168.100.27'),
-    'REDIS_PASSWORD' => env('REDIS_PASSWORD', 'Nhatnhat@123'),
+    'REDIS_HOST' => env('REDIS_HOST', ''),
+    'REDIS_PASSWORD' => env('REDIS_PASSWORD', ''),
     'REDIS_PORT' => env('REDIS_PORT', 5379),
     'REDIS_DB' => env('REDIS_DB', RedisEnum::REDIS_DB),
     'REDIS_HTML' => env('REDIS_HTML', RedisEnum::REDIS_HTML),
-    'ELASTICSEARCH_HOST' => env('ELASTICSEARCH_HOST', '192.168.100.42'),
+    'ELASTICSEARCH_HOST' => env('ELASTICSEARCH_HOST', ''),
     'ELASTICSEARCH_PORT' => env('ELASTICSEARCH_PORT', '9200'),
-    'ELASTICSEARCH_USER' => env('ELASTICSEARCH_USER', 'elastic'),
-    'ELASTICSEARCH_PASS' => env('ELASTICSEARCH_PASS', 'Nhatnhat@123'),
+    'ELASTICSEARCH_USER' => env('ELASTICSEARCH_USER', ''),
+    'ELASTICSEARCH_PASS' => env('ELASTICSEARCH_PASS', ''),
     'LIMIT_DATA_PAGINATE' => CommonEnum::LIMIT_DATA_PAGINATE,
     'LIMIT_WORD_COUNT_EXCERPT' => 40,
     'PRODUCT_GET_ALL_CATES' => '/api/FcProduct/GetCategories',
@@ -34,16 +35,16 @@ return [
     'PRODUCT_GET_DETAIL' => '/api/FcProduct/GetProductDetail?productid=',
     'PRODUCT_GET_META_DATA' => '/api/FcProduct/GetProductByName',
     'PRODUCT_UPDATE_META_DATA' => '/api/FcProduct/UpdateProductMetaData',
-    'PRODUCT_IMAGES' => 'http://192.168.100.29:8080/img/',
+    'PRODUCT_IMAGES' => '',
     'IMAGE_SIZE_SMALL' =>  'small',
     'IMAGE_SIZE_MEDIUM' =>  'medium',
     'IMAGE_SIZE_BIG' =>  'big',
-    'API_FC_ORDER' => env('API_FC_ORDER', 'http://192.168.100.27:5602'), // api get location
-    'API_FC_PRODUCT' => env('API_FC_PRODUCT', 'http://192.168.100.27:5603'), // api get categories
+    'API_FC_ORDER' => env('API_FC_ORDER', ''), // api get location
+    'API_FC_PRODUCT' => env('API_FC_PRODUCT', ''), // api get categories
     'CURLOPT_TIMEOUT' => 10,
     // Define array DNS
     'PROTOCOL' => 'https://',
-    'LIST_DNS' => ['code.net:81', 'test-customer.code.net.vn:8080', 'staging-customer.code.net.vn:8080'],
+    'LIST_DNS' => [''],
     // Define role
     'GROUP_ALL' => 'super.admin|admin|manager.content|editor.content',
     'GROUP_ADMIN' => 'super.admin|admin',
@@ -61,5 +62,10 @@ return [
     'LABEL_SIZE_THUMBNAIL_STBH' => ImageSizeEnum::LABEL_SIZE_THUMBNAIL_STBH,
     'LABEL_SIZE_THUMBNAIL_5NN' => ImageSizeEnum::LABEL_SIZE_THUMBNAIL_5NN,
     'LABEL_SIZE_BANNER_PRODUCT' => ImageSizeEnum::LABEL_SIZE_BANNER_PRODUCT,
+    'CATEGORY_ID_TINTHITRUONG' => CommonEnum::CATEGORY_ID_TINTHITRUONG,
+    'CATEGORY_ID_SUKIENNONG' => CommonEnum::CATEGORY_ID_SUKIENNONG,
+    'CATEGORY_TYPE_SALE_HIGHLIGHT' => CommonEnum::CATEGORY_TYPE_SALE_HIGHLIGHT,
+    'CATEGORY_TYPE_SALE_OTHER' => CommonEnum::CATEGORY_TYPE_SALE_OTHER,
+    'CATEGORY_TYPE_SALE_OPEN' => CommonEnum::CATEGORY_TYPE_SALE_OPEN,
     'FOLDER_PUBLIC' => env('FOLDER_PUBLIC', 'public')
 ];

@@ -1,0 +1,57 @@
+/*CÄƒn khĂ´ng tá»“n táº¡i */
+.aEmpty {
+    color :#fff !important;
+    background: #fff !important;
+}
+.aEmpty p{
+    color :#fff !important;
+}
+/*CÄƒn trá»‘ng */
+.aNormal{
+    color: #616f77 !important;
+    background: #FFFFFF !important;
+}
+/*Giá»¯ chá»— - Lock cÄƒn */
+.aBooking {
+    background: #FAEE5F !important;
+    color :#686666 !important;
+}
+.aBooking p{
+    color :#fff !important;
+}
+/*Äáº·t chá»— */
+.aReservation{
+    background: #20bf20;
+    color: #fff !important;
+}
+.aReservation p{
+    color :#fff !important;
+}
+/*Äáº·t mua */
+.aOrder {
+    background: #0000FF !important;
+    color :#fff !important;
+}
+.aOrder p{
+    color :#fff !important;
+}
+/*ÄĂ£ kĂ½ HÄMB - ÄĂ£ mua */
+.aSell {
+    background: #FF0000 !important;
+    color :#fff !important;
+}
+.aSell p{
+    color :#fff !important;
+}
+
+/*Chá»§ Ä‘áº§u tÆ° thu há»“i */
+.aRetrieve{
+    background: #4d1217 !important;
+    color: #fff !important;
+}
+.aRetrieve p{
+    color :#fff !important;
+}
+.changeSttApartment{
+    cursor: pointer;
+}

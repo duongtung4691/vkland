@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Core\Business\ProductBusiness;
 use App\Core\Business\TemplatesBusiness;
 use App\Core\Enums\CommonEnum;
-//use App\Core\Connection\RedisServer;
 
 class HomepageController extends \App\Core\Controllers\Controller
 {
@@ -16,6 +14,11 @@ class HomepageController extends \App\Core\Controllers\Controller
      */
     public function index()
     {
-        return view('homepage.index');
+        $dataSeo = TemplatesBusiness::getAllContent(CommonEnum::HOME_SECTION_SEO);
+        $dataSeo = json_decode($dataSeo[0]->data_template, true)[0];
+        $metaData['meta_title'] = isset($dataSeo['post_title']) ? $dataSeo['post_title'] : config()->get('constants.SITE_NAME');
+        $metaData['meta_description'] = isset($dataSeo['post_excerpt']) ? $dataSeo['post_excerpt'] : '';
+        $metaData['meta_image'] = isset($dataSeo['post_image']) ? $dataSeo['post_image'] : '';
+        return view('homepage.index', compact('metaData'));
     }
 }

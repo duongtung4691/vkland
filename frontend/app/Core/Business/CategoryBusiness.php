@@ -2,21 +2,31 @@
 
 namespace App\Core\Business;
 
-use App\Core\Connection\RedisServer;
-use App\Core\Repositories\Mysql\CategoryMysql;
-use App\Core\Repositories\Redis\CategoryRedis;
+use App\Core\Models\Category;
 
-class CategoryBusiness
+class CategoryBusiness extends Category
 {
     /**
-     * @param $listCategories
+     * @param $slug
+     * @return mixed
      */
-    public static function setListPostsByAllCategory($listCategories)
-    {
-        $redis = RedisServer::getConnection();
-        foreach ($listCategories as $categoryId) {
-            $result = CategoryMysql::getListPostsByAllCategory($categoryId);
-            CategoryRedis::setListPostsByAllCategory($redis, $categoryId, $result);
-        }
+    public static function getCategoryBySlug($slug) {
+        return Category::where('slug', $slug)->first();
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public static function getCategoryById($id) {
+        return Category::where('id', $id)->first();
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public static function getChildCategoryById($id) {
+        return Category::where('parent_id', $id)->get();
     }
 }

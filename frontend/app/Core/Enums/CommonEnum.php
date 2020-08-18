@@ -22,7 +22,7 @@ class CommonEnum extends Enum
     const IMAGE_SIZE_LARGE = 'large';
     const IMAGE_SIZE_XLARGE = 'xlarge';
     const LIMIT_DATA_PAGINATE = 20;
-    const LIMIT_NEWS_PAGINATE = 9;
+    const LIMIT_NEWS_PAGINATE = 18;
     const LIMIT_RELATED_NEWS = 3;
 
     const SORT_BY_NEW = 'moi-nhat';
@@ -30,11 +30,6 @@ class CommonEnum extends Enum
 
     const HOME_BANNER_TOP = 'banner_top';
     const HOME_BANNER_LEFT = 'banner_left';
-    const HOME_SECTION_HD = 'section_hd';
-    const HOME_SECTION_TTNB = 'section_ttnb';
-    const HOME_SECTION_HDCG = 'section_hdcg';
-    const HOME_SECTION_STB = 'section_stb';
-    const HOME_SECTION_NN = 'section_nn';
     const HOME_SECTION_SEO = 'section_seo';
 
     const SET_LOGIN_TIMEOUT = 500;
@@ -49,11 +44,17 @@ class CommonEnum extends Enum
     const CATEGORY_ID_CHOTHUE_BDS = 8;
     const CATEGORY_ID_DAOTAO_BDS = 16;
     const CATEGORY_ID_TRUYENTHONG_BDS = 18;
+    const CATEGORY_ID_TINTHITRUONG = 19;
+    const CATEGORY_ID_SUKIENNONG = 20;
+    const CATEGORY_TYPE_SALE_HIGHLIGHT = 'sale_highlight';
+    const CATEGORY_TYPE_SALE_OTHER = 'sale_other';
+    const CATEGORY_TYPE_SALE_OPEN = 'sale_open';
+    const CATEGORY_TYPE_SALE_BEST = 'sale_best';
 
     const ELASTIC_POSTS_INDEX = 'posts_index';
     const ELASTICPOSTS_TYPE = '_doc';
     const ELASTIC_PRODUCT_INDEX = 'product_index';
 
-    const FOLDER_ERROR = 'v2.errors.';
+    const FOLDER_ERROR = 'errors.';
     const COOKIE_FACEBOOK_ID = 'facebook_id';
 }

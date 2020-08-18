@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Core\Business\CategoryBusiness;
 use App\Core\Controllers\Controller;
+use App\Core\Enums\CommonEnum;
 use Illuminate\Http\Request;
 use App\Core\Models\Category;
 use App\Core\Connection\RedisServer;
@@ -17,7 +19,7 @@ class CategoryController extends Controller
      */
     public function __construct()
     {
-        $this->limit = config()->get('constants.LIMIT_DATA_PAGINATE');
+        $this->limit = CommonEnum::LIMIT_NEWS_PAGINATE;
     }
 
     /**
@@ -27,8 +29,20 @@ class CategoryController extends Controller
      */
     public function index($slugFolder = '')
     {
-        $categories = Category::all();
-        return view('category.index', compact('categories'));
+        if (strpos($slugFolder, '.html') !== false)
+            return \App::call('App\Http\Controllers\DetailController@index', ['slugDetail' => $slugFolder]);
+        $category = CategoryBusiness::getCategoryBySlug($slugFolder);
+        $metaData['meta_title'] = $category->meta_title;
+        $metaData['meta_keyword'] = $category->meta_keyword;
+        $metaData['meta_description'] = $category->meta_description;
+        $posts = DB::table('posts')->select('id', 'title', 'share_url', 'thumbnail_url', 'price', 'address', 'subdistrict', 'district', 'province')->where([['category_id', '=', $category->id], ['status', '=', 'publish']]);
+        if ($category->id == CommonEnum::CATEGORY_ID_BAN_BDS) {
+            $posts = $posts->orWhereIn('category_id', [2,3,4,5,6,7]);
+        } elseif ($category->id == CommonEnum::CATEGORY_ID_CHOTHUE_BDS) {
+            $posts = $posts->orWhereIn('category_id', [9,10,11,12,13,14,15]);
+        }
+        $posts = $posts->orderBy('id', 'DESC')->paginate($this->limit);
+        return view('category.index', compact('category', 'metaData', 'posts'));
     }
 
     /**
