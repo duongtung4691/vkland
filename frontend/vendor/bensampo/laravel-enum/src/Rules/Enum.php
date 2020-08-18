@@ -10,7 +10,7 @@ class Enum implements Rule
      * The name of the rule.
      */
     protected $rule = 'enum';
-
+    
     /**
      * @var string|\BenSampo\Enum\Enum
      */
@@ -50,9 +50,9 @@ class Enum implements Rule
      */
     public function message()
     {
-        return __('laravelEnum::messages.enum');
+        return 'The value you have provided is not a valid enum instance.';
     }
-
+    
     /**
      * Convert the rule to a validation string.
      *

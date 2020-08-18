@@ -2,6 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheet\Style;
 
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
+
 class Fill extends Supervisor
 {
     // Fill types
@@ -137,7 +139,9 @@ class Fill extends Supervisor
      *
      * @param array $pStyles Array containing style information
      *
-     * @return $this
+     * @throws PhpSpreadsheetException
+     *
+     * @return Fill
      */
     public function applyFromArray(array $pStyles)
     {
@@ -184,7 +188,7 @@ class Fill extends Supervisor
      *
      * @param string $pValue Fill type, see self::FILL_*
      *
-     * @return $this
+     * @return Fill
      */
     public function setFillType($pValue)
     {
@@ -217,7 +221,7 @@ class Fill extends Supervisor
      *
      * @param float $pValue
      *
-     * @return $this
+     * @return Fill
      */
     public function setRotation($pValue)
     {
@@ -244,7 +248,11 @@ class Fill extends Supervisor
     /**
      * Set Start Color.
      *
-     * @return $this
+     * @param Color $pValue
+     *
+     * @throws PhpSpreadsheetException
+     *
+     * @return Fill
      */
     public function setStartColor(Color $pValue)
     {
@@ -274,7 +282,11 @@ class Fill extends Supervisor
     /**
      * Set End Color.
      *
-     * @return $this
+     * @param Color $pValue
+     *
+     * @throws PhpSpreadsheetException
+     *
+     * @return Fill
      */
     public function setEndColor(Color $pValue)
     {

@@ -13,7 +13,7 @@ class Builder {
         'RETURNTRANSFER'        => true,
         'FAILONERROR'           => false,
         'FOLLOWLOCATION'        => false,
-        'CONNECTTIMEOUT'        => 30,
+        'CONNECTTIMEOUT'        => '',
         'TIMEOUT'               => 30,
         'USERAGENT'             => '',
         'URL'                   => '',
@@ -60,17 +60,6 @@ class Builder {
     public function withTimeout($timeout = 30.0)
     {
         return $this->withCurlOption( 'TIMEOUT_MS', ($timeout * 1000) );
-    }
-
-    /**
-     * Set the connect timeout
-     *
-     * @param   float $timeout    The connect timeout for the request (in seconds, fractions of a second are okay. Default: 30 seconds)
-     * @return Builder
-     */
-    public function withConnectTimeout($timeout = 30.0)
-    {
-        return $this->withCurlOption( 'CONNECTTIMEOUT_MS', ($timeout * 1000) );
     }
 
     /**

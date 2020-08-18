@@ -10,8 +10,8 @@ An easy way to use the [official Elastic Search client](https://github.com/elast
 
 - [Installation and Configuration](#installation-and-configuration)
   - [Laravel](#laravel)
-    - [Alternative configuration method via .env file](#alternative-configuration-method-via-env-file)
-    - [Connecting to AWS Elasticsearch Service](#connecting-to-aws-elasticsearch-service)
+      - [Alternative configuration method via .env file](#alternative-configuration-method-via-env-file)
+      - [Connecting to AWS Elasticsearch Service](#connecting-to-aws-elasticsearch-service)
   - [Lumen](#lumen)
 - [Usage](#usage)
 - [Advanced Usage](#advanced-usage)
@@ -68,21 +68,18 @@ AWS_ELASTICSEARCH_ENABLED=true
 AWS_REGION=...
 AWS_ACCESS_KEY_ID=...
 AWS_SECRET_ACCESS_KEY=...
-```
-
-If you have to use another authentication method having custom credentials (i.e. `instanceProfile()`), 
-you have to publish the configuration file and use the **aws_credentials**:
+```  
+If you have to use another authentication method having custom credentials (i.e. instanceProfile), 
+you have to publish the configuration file and use the **aws_credentials**
 
 ```php
 <?php
-// config/elasticsearch.php
 
+// config/elasticsearch.php
 $provider = \Aws\Credentials\CredentialProvider::instanceProfile();
 $memoizedProvider = \Aws\Credentials\CredentialProvider::memoize($provider);
-$credentials = $memoizedProvider()->wait();
-
-...
-
+$credentials = call_user_func( $memoizedProvider )->wait();
+....
 'hosts' => [
     [
         'host'            => env('ELASTICSEARCH_HOST', 'localhost'),
@@ -99,26 +96,8 @@ $credentials = $memoizedProvider()->wait();
         'aws_credentials' => $credentials
     ],
 ],
-```
 
-If you have a job that runs in supervisor, you have to use the Closure.
-This way the credentials will be renewed at runtime.
 
-```php
-<?php
-// config/elasticsearch.php
-
-$provider = \Aws\Credentials\CredentialProvider::instanceProfile();
-$memoizedProvider = \Aws\Credentials\CredentialProvider::memoize($provider);
-
-...
-
-'hosts' => [
-    [
-        ...
-        'aws_credentials' => $memoizedProvider
-    ],
-],
 ```
 
 ### Lumen

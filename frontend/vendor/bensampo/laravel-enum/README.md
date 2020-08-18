@@ -591,16 +591,6 @@ You can also use the 'pipe' syntax for rules.
 
 ## Localization
 
-### Validation messages
-
-Run the following command to publish the language files to your `resources/lang` folder.
-
-```
-php artisan vendor:publish --provider="BenSampo\Enum\EnumServiceProvider"
-```
-
-### Enum descriptions
-
 You can translate the strings returned by the `getDescription` method using Laravel's built in [localization](https://laravel.com/docs/5.6/localization) features.
 
 Add a new `enums.php` keys file for each of your supported languages. In this example there is one for English and one for Spanish.

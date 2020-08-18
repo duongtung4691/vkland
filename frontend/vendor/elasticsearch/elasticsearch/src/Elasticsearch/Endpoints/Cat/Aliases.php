@@ -8,7 +8,7 @@ use Elasticsearch\Endpoints\AbstractEndpoint;
 /**
  * Class Aliases
  * Elasticsearch API name cat.aliases
- * Generated running $ php util/GenerateEndpoints.php 7.7
+ * Generated running $ php util/GenerateEndpoints.php 7.6.0
  *
  * @category Elasticsearch
  * @package  Elasticsearch\Endpoints\Cat
@@ -38,8 +38,7 @@ class Aliases extends AbstractEndpoint
             'h',
             'help',
             's',
-            'v',
-            'expand_wildcards'
+            'v'
         ];
     }
 

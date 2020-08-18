@@ -74,19 +74,3 @@ weight: 7
 - Suffix: blank
 
 --
-
-**unlessrole**
-
-- has parameter = YES
-- Prefix: `<?php if(auth()->check() && !auth()->user()->hasRole(`
-- Suffix: `)); ?>`
-
---
-
-**endunlessrole**
-
-- has parameter = NO
-- Prefix: blank
-- Suffix: blank
-
---

@@ -2,25 +2,6 @@
 
 All notable changes to `laravel-permission` will be documented in this file
 
-## 3.13.0 - 2020-05-19
-- Provide migration error text to stop caching local config when installing packages.
-
-## 3.12.0 - 2020-05-14
-- Add missing config setting for `display_role_in_exception`
-- Ensure artisan `permission:show` command uses configured models
-
-## 3.11.0 - 2020-03-03
-- Allow guardName() as a function with priority over $guard_name property #1395
-
-## 3.10.1 - 2020-03-03
-- Update patch to handle intermittent error in #1370
-
-## 3.10.0 - 2020-03-02
-- Ugly patch to handle intermittent error: `Trying to access array offset on value of type null` in #1370
-
-## 3.9.0 - 2020-02-26
-- Add Wildcard Permissions feature #1381 (see PR or docs for details)
-
 ## 3.8.0 - 2020-02-18
 - Clear in-memory permissions on boot, for benefit of long running processes like Swoole. #1378
 

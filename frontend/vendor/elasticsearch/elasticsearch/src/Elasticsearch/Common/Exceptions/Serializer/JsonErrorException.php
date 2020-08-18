@@ -10,7 +10,7 @@ use Elasticsearch\Common\Exceptions\ElasticsearchException;
  * Class JsonErrorException
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Common\Exceptions\Serializer
+ * @package  Elasticsearch\Common\Exceptions\Curl
  * @author   Bez Hermoso <bezalelhermoso@gmail.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

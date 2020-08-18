@@ -8,7 +8,7 @@ use Elasticsearch\Endpoints\AbstractEndpoint;
 /**
  * Class SearchTemplate
  * Elasticsearch API name search_template
- * Generated running $ php util/GenerateEndpoints.php 7.7
+ * Generated running $ php util/GenerateEndpoints.php 7.6.0
  *
  * @category Elasticsearch
  * @package  Elasticsearch\Endpoints
@@ -50,8 +50,7 @@ class SearchTemplate extends AbstractEndpoint
             'explain',
             'profile',
             'typed_keys',
-            'rest_total_hits_as_int',
-            'ccs_minimize_roundtrips'
+            'rest_total_hits_as_int'
         ];
     }
 

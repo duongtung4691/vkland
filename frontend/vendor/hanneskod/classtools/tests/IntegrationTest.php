@@ -2,7 +2,7 @@
 
 namespace hanneskod\classtools;
 
-class IntegrationTest extends \PHPUnit\Framework\TestCase
+class IntegrationTest extends \hanneskod\readmetester\PHPUnit\ReadmeTestCase
 {
     /**
      * Should not trigger an error, se issue #10

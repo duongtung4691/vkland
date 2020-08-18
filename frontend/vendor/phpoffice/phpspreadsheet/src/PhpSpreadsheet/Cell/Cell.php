@@ -67,7 +67,7 @@ class Cell
     /**
      * Update the cell into the cell collection.
      *
-     * @return $this
+     * @return self
      */
     public function updateInCollection()
     {
@@ -76,12 +76,12 @@ class Cell
         return $this;
     }
 
-    public function detach(): void
+    public function detach()
     {
         $this->parent = null;
     }
 
-    public function attach(Cells $parent): void
+    public function attach(Cells $parent)
     {
         $this->parent = $parent;
     }
@@ -91,6 +91,9 @@ class Cell
      *
      * @param mixed $pValue
      * @param string $pDataType
+     * @param Worksheet $pSheet
+     *
+     * @throws Exception
      */
     public function __construct($pValue, $pDataType, Worksheet $pSheet)
     {
@@ -172,7 +175,9 @@ class Cell
      *
      * @param mixed $pValue Value
      *
-     * @return $this
+     * @throws Exception
+     *
+     * @return Cell
      */
     public function setValue($pValue)
     {
@@ -188,6 +193,8 @@ class Cell
      *
      * @param mixed $pValue Value
      * @param string $pDataType Explicit data type, see DataType::TYPE_*
+     *
+     * @throws Exception
      *
      * @return Cell
      */
@@ -210,9 +217,6 @@ class Cell
 
                 break;
             case DataType::TYPE_NUMERIC:
-                if (is_string($pValue) && !is_numeric($pValue)) {
-                    throw new Exception('Invalid numeric value for datatype Numeric');
-                }
                 $this->value = 0 + $pValue;
 
                 break;
@@ -245,6 +249,8 @@ class Cell
      *
      * @param bool $resetLog Whether the calculation engine logger should be reset or not
      *
+     * @throws Exception
+     *
      * @return mixed
      */
     public function getCalculatedValue($resetLog = true)
@@ -257,7 +263,7 @@ class Cell
                 //    We don't yet handle array returns
                 if (is_array($result)) {
                     while (is_array($result)) {
-                        $result = array_shift($result);
+                        $result = array_pop($result);
                     }
                 }
             } catch (Exception $ex) {
@@ -353,6 +359,8 @@ class Cell
     /**
      *    Does this cell contain Data validation rules?
      *
+     * @throws Exception
+     *
      * @return bool
      */
     public function hasDataValidation()
@@ -366,6 +374,8 @@ class Cell
 
     /**
      * Get Data validation rules.
+     *
+     * @throws Exception
      *
      * @return DataValidation
      */
@@ -383,9 +393,11 @@ class Cell
      *
      * @param DataValidation $pDataValidation
      *
+     * @throws Exception
+     *
      * @return Cell
      */
-    public function setDataValidation(?DataValidation $pDataValidation = null)
+    public function setDataValidation(DataValidation $pDataValidation = null)
     {
         if (!isset($this->parent)) {
             throw new Exception('Cannot set data validation for cell that is not bound to a worksheet');
@@ -411,6 +423,8 @@ class Cell
     /**
      * Does this cell contain a Hyperlink?
      *
+     * @throws Exception
+     *
      * @return bool
      */
     public function hasHyperlink()
@@ -424,6 +438,8 @@ class Cell
 
     /**
      * Get Hyperlink.
+     *
+     * @throws Exception
      *
      * @return Hyperlink
      */
@@ -441,9 +457,11 @@ class Cell
      *
      * @param Hyperlink $pHyperlink
      *
+     * @throws Exception
+     *
      * @return Cell
      */
-    public function setHyperlink(?Hyperlink $pHyperlink = null)
+    public function setHyperlink(Hyperlink $pHyperlink = null)
     {
         if (!isset($this->parent)) {
             throw new Exception('Cannot set hyperlink for cell that is not bound to a worksheet');
@@ -531,6 +549,8 @@ class Cell
     /**
      * Re-bind parent.
      *
+     * @param Worksheet $parent
+     *
      * @return Cell
      */
     public function rebindParent(Worksheet $parent)
@@ -597,8 +617,10 @@ class Cell
 
     /**
      * Set value binder to use.
+     *
+     * @param IValueBinder $binder
      */
-    public static function setValueBinder(IValueBinder $binder): void
+    public static function setValueBinder(IValueBinder $binder)
     {
         self::$valueBinder = $binder;
     }
@@ -647,7 +669,7 @@ class Cell
      *
      * @param mixed $pAttributes
      *
-     * @return $this
+     * @return Cell
      */
     public function setFormulaAttributes($pAttributes)
     {

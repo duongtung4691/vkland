@@ -25,6 +25,8 @@ abstract class Coordinate
      *
      * @param string $pCoordinateString eg: 'A1'
      *
+     * @throws Exception
+     *
      * @return string[] Array containing column and row (indexes 0 and 1)
      */
     public static function coordinateFromString($pCoordinateString)
@@ -58,6 +60,8 @@ abstract class Coordinate
      * @param string $pCoordinateString e.g. 'A' or '1' or 'A1'
      *                    Note that this value can be a row or column reference as well as a cell reference
      *
+     * @throws Exception
+     *
      * @return string Absolute coordinate        e.g. '$A' or '$1' or '$A$1'
      */
     public static function absoluteReference($pCoordinateString)
@@ -86,6 +90,8 @@ abstract class Coordinate
      * Make string coordinate absolute.
      *
      * @param string $pCoordinateString e.g. 'A1'
+     *
+     * @throws Exception
      *
      * @return string Absolute coordinate        e.g. '$A$1'
      */
@@ -138,6 +144,8 @@ abstract class Coordinate
      * Build range from coordinate strings.
      *
      * @param array $pRange Array containg one or more arrays containing one or two coordinate strings
+     *
+     * @throws Exception
      *
      * @return string String representation of $pRange
      */
@@ -503,7 +511,7 @@ abstract class Coordinate
      * @param int $currentRow
      * @param int $endRow
      */
-    private static function validateRange($cellBlock, $startColumnIndex, $endColumnIndex, $currentRow, $endRow): void
+    private static function validateRange($cellBlock, $startColumnIndex, $endColumnIndex, $currentRow, $endRow)
     {
         if ($startColumnIndex >= $endColumnIndex || $currentRow > $endRow) {
             throw new Exception('Invalid range: "' . $cellBlock . '"');

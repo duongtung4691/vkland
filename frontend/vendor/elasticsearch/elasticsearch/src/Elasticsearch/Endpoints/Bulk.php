@@ -11,7 +11,7 @@ use Traversable;
 /**
  * Class Bulk
  * Elasticsearch API name bulk
- * Generated running $ php util/GenerateEndpoints.php 7.7
+ * Generated running $ php util/GenerateEndpoints.php 7.6.0
  *
  * @category Elasticsearch
  * @package  Elasticsearch\Endpoints
@@ -21,7 +21,6 @@ use Traversable;
  */
 class Bulk extends AbstractEndpoint
 {
-
     public function __construct(SerializerInterface $serializer)
     {
         $this->serializer = $serializer;

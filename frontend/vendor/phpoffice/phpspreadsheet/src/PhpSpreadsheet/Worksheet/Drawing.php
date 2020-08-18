@@ -76,7 +76,9 @@ class Drawing extends BaseDrawing
      * @param string $pValue File path
      * @param bool $pVerifyFile Verify file
      *
-     * @return $this
+     * @throws PhpSpreadsheetException
+     *
+     * @return Drawing
      */
     public function setPath($pValue, $pVerifyFile = true)
     {
