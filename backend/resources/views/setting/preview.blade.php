@@ -20,7 +20,7 @@
 <div class="dx_footer_bg">
     <div class="dx_footer_content">
         <div class="col-md-3 dx_footer_logo">
-            <a href="#"><img width="225px" height="100px" src="{{ $contact['logo_company'] }}"></a>
+            <a href="#"><img style="height:100px" src="{{ $contact['logo_company'] }}"></a>
         </div>
         <div class="col-md-5 dx_footer_about">
             <span>{{ $contact['company_contact'] }}</span>

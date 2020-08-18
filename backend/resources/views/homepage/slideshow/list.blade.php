@@ -22,7 +22,7 @@
                 <tbody>
                 @foreach($sliders as $slider)
                     <tr>
-                        <td><img src="{{$slider->banner_file}}" width="200px" alt=""/></td>
+                        <td><img src="{{config()->get('constants.STATIC_IMAGES'). $slider->banner_file}}" width="200px" alt=""/></td>
                         <td>
                             <a href='{{ url("templates/delete/bannertop/$slider->id") }}' class="btn btn-danger btn-xs" onclick="return confirm('Bạn có chắc muốn xóa banner {{ $slider->banner_name }} này chứ?')">
                                 <i class="fa fa-trash-o"></i> Delete

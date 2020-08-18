@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Ảnh đại diện</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">
-                                <img style="width: 100px" class="img_post_image"  src="{{$data['post_image']}}"/>
+                                <img style="width: 100px" class="img_post_image"  src="{{config()->get('constants.STATIC_IMAGES').$data['post_image']}}"/>
                                 <input type="input" class="form-control post_image" value="{{$data['post_image']}}" name="post_image[]">
                                 <input type="file" name="post_image_file[]" class="post_image_file">
                             </div>

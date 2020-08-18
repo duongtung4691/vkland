@@ -60,7 +60,7 @@ class PostsController extends Controller
      */
     public function create($type)
     {
-        $categories = Category::select('id', 'name')->where('is_actived', 1)->get();
+        $categories = Category::select('id', 'name', 'parent_id')->where('is_actived', 1)->get();
         return view('posts.create', compact('type', 'categories'));
     }
 
@@ -111,6 +111,12 @@ class PostsController extends Controller
                     'status' => $request->get('preview') == true ? 'draft' : $request->get('status'), // Chế độ xem trước là bài nháp
                     'published_at' => $request->get('published_at') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('published_at')),
                     'post_type' => $type,
+                    'category_type' => $request->get('category_type'),
+                    'price' => $request->get('price'),
+                    'address' => $request->get('address'),
+                    'province' => $request->get('province'),
+                    'district' => $request->get('district'),
+                    'subdistrict' => $request->get('subdistrict'),
                     'category_id' => $request->get('category_id'),
                     'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null,
                     'meta_title' => $request->get('meta_title'),
@@ -128,10 +134,10 @@ class PostsController extends Controller
                 if ($category->parent_id == 0) {
                     switch ($request->get('category_id')) {
                         case CommonEnum::CATEGORY_ID_BAN_BDS:
-                            $slugParent = 'ban';
+                            $slugParent = 'ban-bat-dong-san';
                             break;
                         case CommonEnum::CATEGORY_ID_CHOTHUE_BDS:
-                            $slugParent = 'cho-thue';
+                            $slugParent = 'cho-thue-bat-dong-san';
                             break;
                         default:
                             $slugParent = 'tin-tuc';
@@ -211,7 +217,7 @@ class PostsController extends Controller
     {
         $action = 'edit';
         $post = Posts::find($id);
-        $categories = Category::select('id', 'name')->where('is_actived', 1)->get();
+        $categories = Category::select('id', 'name', 'parent_id')->where('is_actived', 1)->get();
         $categoryPost = DB::table('categories')
             ->where('id', $post->category_id)
             ->pluck('categories.id')
@@ -269,6 +275,12 @@ class PostsController extends Controller
                 $post->status = $request->get('mode') == 'unpublish' ? 'unpublish' : $request->get('status');
                 $post->published_at = $request->get('published_at') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('published_at'));
                 $post->post_type = $post->post_type;
+                $post->category_type = $request->get('category_type');
+                $post->price = $request->get('price');
+                $post->address = $request->get('address');
+                $post->province = $request->get('province');
+                $post->district = $request->get('district');
+                $post->subdistrict = $request->get('subdistrict');
                 $post->category_id = $request->get('category_id');
                 $post->meta_title = $request->get('meta_title');
                 $post->meta_keyword = $request->get('meta_keyword');
@@ -279,10 +291,10 @@ class PostsController extends Controller
                 if ($category->parent_id == 0) {
                     switch ($request->get('category_id')) {
                         case CommonEnum::CATEGORY_ID_BAN_BDS:
-                            $slugParent = 'ban';
+                            $slugParent = 'ban-bat-dong-san';
                             break;
                         case CommonEnum::CATEGORY_ID_CHOTHUE_BDS:
-                            $slugParent = 'cho-thue';
+                            $slugParent = 'cho-thue-bat-dong-san';
                             break;
                         default:
                             $slugParent = 'tin-tuc';
@@ -301,26 +313,6 @@ class PostsController extends Controller
                     $post->thumbnail_url = ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null;
                 }
                 $post->save();
-
-                // Xử lý lưu lại thông tin bài viết đã sửa vào cache (redis)
-                $data = array(
-                    'id' => $id,
-                    'title' => $title,
-                    'share_url' => $share_url,
-                    'slug' => $slug,
-                    'excerpt' => $request->get('excerpt'),
-                    'content' => $content,
-                    'author_name' => $request->get('author_name'),
-                    'status' => $request->get('preview') == true ? 'draft' : $request->get('status'), // Chế độ xem trước là bài nháp
-                    'published_at' => strtotime($request->get('published_at')),
-                    'post_type' => $post->type,
-                    'category_id' => $request->get('category_id'),
-                    'disease_id' => $request->get('disease_id'),
-                    'thumbnail_url' => $post->thumbnail_url,
-                    'meta_title' => $request->get('meta_title'),
-                    'meta_keyword' => $request->get('meta_keyword'),
-                    'meta_description' => $request->get('meta_description')
-                );
 
                 if ($request->get('category_id') !== $post->category_id) {
                     // delete trước rồi mới insert lại
@@ -413,11 +405,8 @@ class PostsController extends Controller
     {
         try {
             $post = Posts::find($id);
-            $post->status = 'trash';
-            $post->is_deleted = 1;
-            $post->deleted_at = date('Y-m-d H:i:s');
-            $post->save();
-            return redirect('/posts')->with('message', 'Xóa tạm bài viết ' . $post->title . ' thành công');
+            $post->delete();
+            return redirect('/posts')->with('message', 'Xóa bài viết ' . $post->title . ' thành công');
         } catch (\Exception $exception) {
             return redirect('/posts')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }

@@ -40,9 +40,9 @@ class CKEditorController extends Controller
 
             $url = config()->get('constants.STATIC_IMAGES') . '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name;
             //$msg = 'Image successfully uploaded: ' . $destinationPath . $original_name;
-            UploadFileBusiness::setFolderPublic($yearDir, $monthDir, $dayDir);
+            UploadFileBusiness::uploadFileToFolder($file);
             $msg = 'Upload ảnh lên server thành công';
-            $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
+            $re = "<script>window.parent.CKEDITOR.tools.callFunction(81, '$url', '$msg')</script>";
 
             // Render HTML output
             @header('Content-type: text/html; charset=utf-8');

@@ -17,7 +17,7 @@ class CreateSlidersTable extends Migration
             $table->increments('id');
             $table->string('banner_name');
             $table->string('banner_file');
-            $table->string('banner_link');
+            $table->string('banner_link')->nullable();
             $table->timestamps();
         });
     }

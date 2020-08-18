@@ -210,7 +210,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('template.sectionseo', compact('template','dataTemplate'));
+        return view('homepage.sectionseo', compact('template','dataTemplate'));
     }
 
     /**** Start Post *****/

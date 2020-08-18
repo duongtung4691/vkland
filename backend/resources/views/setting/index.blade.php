@@ -73,7 +73,13 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Logo công ty</label>
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Logo header công ty</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="file" class="form-control" name="logo_header_company" value="{{ $contact['logo_header_company'] ?? '' }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Logo footer công ty</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <input type="file" class="form-control" name="logo_company" value="{{ $contact['logo_company'] ?? '' }}">
                             </div>

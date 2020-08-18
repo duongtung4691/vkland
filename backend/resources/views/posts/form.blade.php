@@ -41,10 +41,9 @@ switch ($action) {
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Tóm tắt
-                            (Giới hạn {{ config()->get('constants.LIMIT_WORD_COUNT_EXCERPT') }} từ)</label>
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Tóm tắt</label>
                         <div class="col-md-10 col-sm-10 col-xs-12">
-                            <textarea class="form-control" name="excerpt" rows="3" {{ $attribute }}>{{ $post->excerpt }}</textarea>
+                            <textarea id="excerpt" class="form-control" name="excerpt" rows="3" {{ $attribute }}>{{ $post->excerpt }}</textarea>
                             <label class="label label-info word-left">Tối đa được <strong>{{ config()->get('constants.LIMIT_WORD_COUNT_EXCERPT') }}</strong> từ</label>
                         </div>
                     </div>
@@ -63,12 +62,71 @@ switch ($action) {
                             <select class="form-control" name="category_id" {{ $attribute }}>
                                 @foreach ($categories as $category)
                                     @if ($category->id == $categoryPost)
-                                        <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
+                                        <option value="{{ $category->id }}" selected>
+                                            @if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;
+                                            |--
+                                            @endif{{ $category->name }}</option>
                                     @else
-                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                        <option value="{{ $category->id }}">
+                                            @if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;
+                                            |--
+                                            @endif{{ $category->name }}</option>
                                     @endif
                                 @endforeach
                             </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Loại dự án</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <div class="radio">
+                                <input type="radio" value="sale_highlight" name="category_type" {{ $post->category_type == 'sale_highlight' ?  'checked' : '' }} {{ $attribute }} class="flat"> Dự án nổi bật
+                            </div>
+                            <div class="radio">
+                                <input type="radio" value="sale_other" name="category_type" {{ $post->category_type == 'sale_other' ?  'checked' : '' }} {{ $attribute }} class="flat"> Dự án bất động sản khác
+                            </div>
+                            <div class="radio">
+                                <input type="radio" value="sale_open" name="category_type" {{ $post->category_type == 'sale_open' ?  'checked' : '' }} {{ $attribute }} class="flat"> Dự án sắp mở bán
+                            </div>
+                            <div class="radio">
+                                <input type="radio" value="rent_highlight" name="category_type" {{ $post->category_type == 'rent_highlight' ?  'checked' : '' }} {{ $attribute }} class="flat"> Dự án cho thuê nổi bật
+                            </div>
+                            <div class="radio">
+                                <input type="radio" value="sale_inprogress" name="category_type" {{ $post->category_type == 'sale_inprogress' ?  'checked' : '' }} {{ $attribute }} class="flat"> Dự án đang bán
+                            </div>
+                            <div class="radio">
+                                <input type="radio" value="sale_best" name="category_type" {{ $post->category_type == 'sale_best' ?  'checked' : '' }} {{ $attribute }} class="flat"> Dự án bạn chạy
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Giá bán (Giá cho thuê)</label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <input type="text" class="form-control" name="price" value="{{ $post->price }}" {{ $attribute }}>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Địa chỉ</label>
+                        <div class="col-md-10 col-sm-10 col-xs-12">
+                            <input type="text" class="form-control" name="address" value="{{ $post->address }}" {{ $attribute }}>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Phường/Xã</label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <input type="text" class="form-control" name="subdistrict" value="{{ $post->subdistrict }}" {{ $attribute }}>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Quận/Huyện</label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <input type="text" class="form-control" name="district" value="{{ $post->district }}" {{ $attribute }}>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Tỉnh/Thành phố</label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <input type="text" class="form-control" name="province" value="{{ $post->province }}" {{ $attribute }}>
                         </div>
                     </div>
                     <div class="form-group">
@@ -174,7 +232,6 @@ switch ($action) {
         </div>
     </div>
 </div>
-@include('components.word_count')
 @include('components.thumbnail_preview')
 @include('components.save_posts')
 @include('components.tags')

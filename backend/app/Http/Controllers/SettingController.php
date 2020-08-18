@@ -48,6 +48,7 @@ class SettingController extends Controller
             $key = 'footer_info';
             $setting = Setting::where('key', '=', $key);
             $contact = json_decode($setting->first()->value);
+            $logo_header_company = $request->logo_header_company;
             $logo_company = $request->logo_company;
             $value = array(
                 'company_contact' => $request->get('company_contact'),
@@ -58,10 +59,15 @@ class SettingController extends Controller
                 'email_contact' => $request->get('email_contact'),
                 'address_contact' => $request->get('address_contact'),
                 'timer_support' => $request->get('timer_support'),
+                'logo_header_company' => ($logo_header_company) ? '/assets/images/logo/' . $logo_header_company->getClientOriginalName() : ($contact->logo_header_company ? $contact->logo_header_company : null),
                 'logo_company' => ($logo_company) ? '/assets/images/logo/' . $logo_company->getClientOriginalName() : ($contact->logo_company ? $contact->logo_company : null),
                 'copyright_left' => $request->get('copyright_left'),
                 'copyright_right' => $request->get('copyright_right')
             );
+            if ($logo_header_company) {
+                // Upload file to local server
+                $logo_header_company->move('assets/images/logo', $logo_header_company->getClientOriginalName());
+            }
             if ($logo_company) {
                 // Upload file to local server
                 $logo_company->move('assets/images/logo', $logo_company->getClientOriginalName());

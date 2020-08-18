@@ -18,20 +18,8 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-4 form-group">
                         <a href="{{ url('/posts/create/text') }}" class="btn btn-app">
-                            <span class="glyphicon glyphicon-text-size" aria-hidden="true"></span>
-                            <span class="glyphicon-class">Bài text</span> (text + ảnh + video)
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 form-group">
-                        <a href="{{ url('/posts/create/photo') }}" class="btn btn-app">
-                            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-                            <span class="glyphicon-class">Bài ảnh</span> (text + ảnh)
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4 form-group">
-                        <a href="{{ url('/posts/create/video') }}" class="btn btn-app">
-                            <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
-                            <span class="glyphicon-class">Bài video</span> (text + video)
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            <span class="glyphicon-class">Bài viết</span> (text + ảnh + video)
                         </a>
                     </div>
                 </div>

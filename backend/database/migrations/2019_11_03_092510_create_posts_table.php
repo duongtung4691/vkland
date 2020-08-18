@@ -25,11 +25,17 @@ class CreatePostsTable extends Migration
             $table->integer('user_id');
             $table->string('status', 20);
             $table->string('published_at', 15)->nullable();
-            $table->string('thumbnail_url');
+            $table->string('thumbnail_url')->nullable();
             $table->string('top_background_url')->nullable();
             $table->tinyInteger('is_comment')->nullable()->default(1);
             $table->smallInteger('comment_count')->nullable()->default(0);
             $table->string('post_type', 10);
+            $table->string('category_type', 20)->nullable();
+            $table->string('price', 20)->nullable();
+            $table->string('address', 255)->nullable();
+            $table->string('province', 50)->nullable();
+            $table->string('district', 50)->nullable();
+            $table->string('subdistrict', 50)->nullable();
             $table->string('banner_image')->nullable();
             $table->string('banner_url')->nullable();
             $table->text('banner_template')->nullable();

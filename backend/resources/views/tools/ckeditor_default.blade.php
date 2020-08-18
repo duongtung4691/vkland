@@ -3,6 +3,7 @@
 <script>
     if ($('#content').length > 0) {
         CKEDITOR.replace('content', {
+            allowedContent: true,
             filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
             filebrowserUploadMethod: 'form',
             enterMode: CKEDITOR.ENTER_BR,
@@ -99,49 +100,24 @@
             ]
         });
     }
-    if ($('.editor').length > 0) {
-        var dd = 1;
-        $(".editor").each(function () {
-            CKEDITOR.inline('editor' + dd, {
-                filebrowserUploadUrl: "{{route('upload', ['_token' => csrf_token() ])}}",
-                filebrowserUploadMethod: 'form',
-                //filebrowserImageBrowseUrl: 'http://125.212.224.111/uploads/2019?type=Images',
-                //filebrowserBrowseUrl: 'http://125.212.224.111/uploads/2019?type=Files',
-                enterMode: CKEDITOR.ENTER_BR,
-                // Allowing any content in editor
-                allowedContent: true,
-                // Extra plugins
-                extraPlugins: '<?php
-                    //if ($user = auth()->user()->roles->pluck('slug')[0] == 'admin') {
-                        echo 'sourcedialog,';
-                    //}
-                    ?>tableresize,image2,uploadimage,uploadfile,youtube',
-                // Remove plugins
-                removePlugins: 'stylescombo',//,font
-                // Show toolbar on startup (optional).
-                startupFocus: true
-            });
-            dd = dd + 1;
-        });
-    }
 
-    var editor_config_basic = {
-        toolbar: [
-            { name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
-            { name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ], items: [ 'Scayt' ] },
-            { name: 'links', items: [ 'Link', 'Unlink', 'Anchor' ] },
-            { name: 'insert', items: [ 'HorizontalRule', 'SpecialChar' ] },
-            { name: 'tools', items: [ 'Maximize' ] },
-            { name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
-            { name: 'others', items: [ '-' ] },
-            '/',
-            { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
-            { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
-            { name: 'styles', items: [ 'Styles', 'Format' ] }
-        ],
-        uiColor: '#f8f8f8'
-    };
-    $('.editor_basic').each(function () {
-        CKEDITOR.replace($(this).attr('id'), editor_config_basic);
-    });
+    if ($('#excerpt').length > 0) {
+        var editor_config_basic = {
+            toolbar: [
+                {name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo']},
+                {name: 'editing', groups: ['find', 'selection', 'spellchecker'], items: ['Scayt']},
+                {name: 'links', items: ['Link', 'Unlink', 'Anchor']},
+                {name: 'insert', items: ['HorizontalRule', 'SpecialChar']},
+                {name: 'tools', items: ['Maximize']},
+                {name: 'document', groups: ['mode', 'document', 'doctools']},
+                {name: 'others', items: ['-']},
+                '/',
+                {name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat']},
+                {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote']},
+                {name: 'styles', items: ['Styles', 'Format']}
+            ],
+            uiColor: '#f8f8f8'
+        };
+        CKEDITOR.replace('excerpt', editor_config_basic);
+    }
 </script>

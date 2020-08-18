@@ -91,15 +91,7 @@ Route::group(['middleware' => 'auth'], function () {
 // Trang quản trị đi vào nhanh các page giới thiệu
     Route::group(['prefix' => 'landingpage', 'as' => 'landingpage', 'middleware' => 'auth'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'LandingpageController@index']);
-        Route::get('/gioi-thieu-5-nhat-nhat', ['uses' => 'LandingpageController@gioithieu5nhatnhat']);
-        Route::get('/dinh-nghia-dong-y-the-he-2', ['uses' => 'LandingpageController@dinhnghiadongythehe2']);
-        Route::get('/nha-may-duoc', ['uses' => 'LandingpageController@nhamayduoc']);
-        Route::get('/cong-ty-lien-ket', ['uses' => 'LandingpageController@congtylienket']);
-        Route::get('/chinh-sach-doi-tra', ['uses' => 'LandingpageController@chinhsachdoitra']);
-        Route::get('/phuong-thuc-van-chuyen', ['uses' => 'LandingpageController@phuongthucvanchuyen']);
-        Route::get('/chinh-sach-bao-mat', ['uses' => 'LandingpageController@chinhsachbaomat']);
-        Route::get('/cham-soc-sau-ban-hang', ['uses' => 'LandingpageController@chamsocsaubanhang']);
-        Route::get('/huong-dan-mua-hang', ['uses' => 'LandingpageController@huongdanmuahang']);
+        Route::get('/chung-chi-moi-gioi-bat-dong-san', ['uses' => 'LandingpageController@chungchimoigioibatdongsan']);
         Route::get('/{id?}', ['as' => 'index', 'uses' => 'LandingpageController@index']);
         Route::post('/update', ['uses' => 'LandingpageController@update']);
     });

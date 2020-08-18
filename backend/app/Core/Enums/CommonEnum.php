@@ -21,7 +21,7 @@ class CommonEnum extends Enum
     const IMAGE_SIZE_BIG = 'big';
     const IMAGE_SIZE_LARGE = 'large';
     const IMAGE_SIZE_XLARGE = 'xlarge';
-    const LIMIT_DATA_PAGINATE = 10;
+    const LIMIT_DATA_PAGINATE = 20;
     const LIMIT_NEWS_PAGINATE = 9;
     const LIMIT_RELATED_NEWS = 3;
 

@@ -15,6 +15,6 @@ class UploadFileBusiness
             File::makeDirectory($destinationPath, 0777, true);
         }
         $file->move($destinationPath, $file->getClientOriginalName());
-        return "/uploads/$yearDir/$monthDir/$dayDir/" . $file->getClientOriginalName();
+        return "/$yearDir/$monthDir/$dayDir/" . $file->getClientOriginalName();
     }
 }
